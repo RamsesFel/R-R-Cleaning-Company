@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    background-color: rgb(145, 231, 231);
+}
+  table,td,th {
+  border: 2px solid;
+  border-color: #000000;
+  background-color: #7a7a7aeb;
+  border-collapse: separate;
+  border-spacing: 2em;
+  width: 100%;
+  text-align: left;
+  font-size: 30px;
+  color: #ffffff;
+  margin-left: auto;
+  overflow: hidden;
+}
