@@ -1,15 +1,17 @@
 table, tr{
     table-layout: fixed;
-    overflow: hidden;
     width: 100%;
 }
 
 td{
     border: 0;
     background-color: rgba(240, 248, 255, 0);
+    max-width: auto;
 }
 
 img{
-    width: 700px;
-    height: 700px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 700px;
 }
