@@ -1,8 +1,9 @@
+@if (enlargeImg == 0) {
 <table>
     <tr>
-        <td><img src="done room.jpeg"></td>
-        <td><img src="done room 2.jpeg"></td>
-        <td><img src="landscape.jpeg"></td>
+        <td><img src="done room.jpeg" (click)="focusImg('done room.jpeg')"></td>
+        <td><img src="done room 2.jpeg" (click)="focusImg('done room 2.jpeg')"></td>
+        <td><img src="landscape.jpeg" (click)="focusImg('landscape.jpeg')"></td>
     </tr>
 </table>
 
@@ -13,28 +14,32 @@
     </tr>
 
     <tr>
-        <td><img src="dirty bathroom.jpeg"></td>
-        <td><img src="after.jpeg"></td>
+        <td><img src="dirty bathroom.jpeg" (click)="focusImg('dirty bathroom.jpeg')"></td>
+        <td><img src="after.jpeg" (click)="focusImg('after.jpeg')"></td>
     </tr>
 
     <tr>
-        <td><img src="work less started.jpeg"></td>
-        <td><img src="bathroom 2.jpeg"></td>
+        <td><img src="work less started.jpeg" (click)="focusImg('work less started.jpeg')"></td>
+        <td><img src="bathroom 2.jpeg" (click)="focusImg('bathroom 2.jpeg')"></td>
     </tr>
 
     <tr>
-        <td><img src="floor in more progress.jpeg"></td>
-        <td><img src="floor in progress.jpeg"></td>
+        <td><img src="floor in more progress.jpeg" (click)="focusImg('floor in more progress.jpeg')"></td>
+        <td><img src="floor in progress.jpeg" (click)="focusImg('floor in progress.jpeg')"></td>
     </tr>
 
     <tr>
-        <td><img src="work start.jpeg"></td>
-        <td><img src="Bathroom.jpeg"></td>
+        <td><img src="work start.jpeg" (click)="focusImg('work start.jpeg')"></td>
+        <td><img src="Bathroom.jpeg" (click)="focusImg('Bathroom.jpeg')"></td>
     </tr>
 
     <tr>
-        <td><img src="done floor.jpeg"></td>
-        <td><img src="floor.jpeg"></td>
+        <td><img src="done floor.jpeg" (click)="focusImg('done floor.jpeg')"></td>
+        <td><img src="floor.jpeg" (click)="focusImg('floor.jpeg')"></td>
     </tr>
 
 </table>
+} @else {
+    <img src="{{selectedImg}}" (click)="focusImg('')" >
+}
+
